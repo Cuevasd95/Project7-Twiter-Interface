@@ -6,6 +6,7 @@ const Twit = require('twit');
 const router = express.Router();
 const mainRoutes = require('./routes');
 const io = require('socket.io');
+const config = require('./config.js');
 let port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
